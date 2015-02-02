@@ -12,6 +12,9 @@ package lokaler;
  * @author awp
  */
 public class EDB_Lokale extends Lokale {
+	private final double arealPerStuderende = 2.5;
+	private final double strømPerPC = 3.0;
+	private final double pcerPerStuderende = 1.0;
 
 	public EDB_Lokale(int areal, int strøm) {
 		super(areal, strøm);
@@ -23,7 +26,7 @@ public class EDB_Lokale extends Lokale {
 
 	@Override
 	public int kapacitet() {
-		return 0;
+		return Math.min((int) (getAreal() / arealPerStuderende), (int) (getStrøm() / strømPerPC / pcerPerStuderende));
 	}
 	
 	@Override
