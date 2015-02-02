@@ -18,7 +18,7 @@ public class KlasseLokale extends Lokale {
 	
 	@Override
 	public String toString() {
-		return null;
+		return "Lokalet er et klasselokale.\n" + super.toString();
 	}
 
 }
