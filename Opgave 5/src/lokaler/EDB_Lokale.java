@@ -31,7 +31,7 @@ public class EDB_Lokale extends Lokale {
 	
 	@Override
 	public String toString() {
-		return null;
+		return "Lokalet er et EDB-lokale.\n" + super.toString();
 	}
 
 }
