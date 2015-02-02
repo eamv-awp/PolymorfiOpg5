@@ -1,5 +1,11 @@
 package lokaler;
 
+/* 
+ * Når en klasse placeres i en pakke så vil filen der indeholder klassen 
+ * skulle placeres i en tilsvarende undermappe.
+ * 
+ */
+
 public abstract class Lokale {
 	
 	private int areal;
