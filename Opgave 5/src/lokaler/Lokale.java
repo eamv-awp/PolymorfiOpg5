@@ -18,11 +18,11 @@ public abstract class Lokale {
 	public abstract int kapacitet();
 	
 	protected int getAreal() {
-		return 0;
+		return this.areal;
 	}
 	
 	protected int getStrøm() {
-		return 0;
+		return this.strøm;
 	}
 	
 	@Override
