@@ -11,7 +11,8 @@ public abstract class Lokale {
 	}
 	
 	public Lokale (Lokale other) {
-		
+		this.areal = other.areal;
+		this.strøm = other.strøm;
 	}
 	
 	public abstract int kapacitet();
