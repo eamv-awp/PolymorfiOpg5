@@ -8,7 +8,7 @@ public class Test {
 		testKlasseLokalePå30Kvm();
 		testKopiAfKlasseLokalePå40Kvm();
 		testEDB_LokalePå20KvmMed25EnhederStrøm();
-//		testEDB_LokalePå60KvmMed70EnhederStrøm();
+		testEDB_LokalePå60KvmMed70EnhederStrøm();
 	}
 	
 	private static void testKlasseLokalePå40Kvm() {
@@ -56,7 +56,14 @@ public class Test {
 	}
 	
 	private static void testEDB_LokalePå60KvmMed70EnhederStrøm() {
-		
+		System.out.println("Forventet output:");
+		System.out.println("  Lokaletype: EDB-lokale");
+		System.out.println("  Areal:      60 m2");
+		System.out.println("  Strømudtag: 70 enheder");
+		System.out.println("  Kapacitet:  23 studerende");
+		System.out.println("Faktisk output:");
+		System.out.println(new EDB_Lokale(60, 70));
+		System.out.println();
 	}
 
 }
