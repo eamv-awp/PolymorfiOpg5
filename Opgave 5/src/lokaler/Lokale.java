@@ -27,7 +27,8 @@ public abstract class Lokale {
 	
 	@Override
 	public String toString() {
-		return null;
+		return "Lokalet er på " + getAreal() + " m2 og med et maksimalt strømudtag på " + getStrøm() + " enheder.\n" 
+			 + "Lokalet har en maksimal kapacitet på " + kapacitet() + " studerende.";
 	}
 
 }
