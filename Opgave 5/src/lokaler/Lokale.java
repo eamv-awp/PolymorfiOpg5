@@ -5,14 +5,22 @@ public abstract class Lokale {
 	private int areal;
 	private int strøm;
 	
-	public abstract int kapacitet();
-	
 	public Lokale(int areal, int strøm) {
 		
 	}
 	
 	public Lokale (Lokale other) {
 		
+	}
+	
+	public abstract int kapacitet();
+	
+	protected int getAreal() {
+		return 0;
+	}
+	
+	protected int getStrøm() {
+		return 0;
 	}
 	
 	@Override
