@@ -6,7 +6,8 @@ public abstract class Lokale {
 	private int strøm;
 	
 	public Lokale(int areal, int strøm) {
-		
+		this.areal = areal;
+		this.strøm = strøm;
 	}
 	
 	public Lokale (Lokale other) {
