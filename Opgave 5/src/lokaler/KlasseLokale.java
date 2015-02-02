@@ -1,6 +1,7 @@
 package lokaler;
 
 public class KlasseLokale extends Lokale {
+	private final double arealPerStuderende = 2.5;
 
 	public KlasseLokale(int areal, int strøm) {
 		super(areal, strøm);
@@ -12,7 +13,7 @@ public class KlasseLokale extends Lokale {
 
 	@Override
 	public int kapacitet() {
-		return 0;
+		return (int) (getAreal() / arealPerStuderende);
 	}
 	
 	@Override
